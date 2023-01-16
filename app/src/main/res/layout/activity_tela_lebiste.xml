@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaLebiste"
+    android:background="@color/white">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="1080dp"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            tools:ignore="MissingConstraints">
+
+            <View
+                android:id="@+id/btnVoltarHome"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/container_circulo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_seta2"
+                app:layout_constraintBottom_toBottomOf="@id/btnVoltarHome"
+                app:layout_constraintEnd_toEndOf="@id/btnVoltarHome"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnVoltarHome" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginBottom="36dp"
+                android:text="Peixe Lebiste"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="216dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_allfishes"
+                app:layout_constraintStart_toEndOf="@id/btnVoltarHome"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Sobre:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout5" />
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/textView12"
+            android:layout_width="350dp"
+            android:layout_height="122dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="O Lebiste é um peixinho bastante popular entre os ornamentais e muito querido dos aquaristas. Sua fama tem um motivo, naturalmente. Além das cores vivas, os machos possuem uma cauda longa e que tremelica o tempo todo, dando um movimento bem alegre para qualquer aquário."
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="331dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/telalebiste" />
+
+        <TextView
+            android:id="@+id/txtCuidados"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Cuidados Básicos:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/txtTexto"
+            android:layout_width="350dp"
+            android:layout_height="169dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="O Lebiste é um peixe relativamente fácil de se cuidar. Porém, é fundamental ficar atento ao monitoramento do aquário, já que esses peixinhos não toleram alterações bruscas de temperatura e de pH. Como eles se reproduzem muito facilmente e os alevinos (filhotes) costumam soltar alguns hormônios na água, é fundamental realizar a troca parcial da água (TPA) pelo menos uma vez por semana."
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtComida"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Alimentação:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/txtComida2"
+            android:layout_width="350dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Esse peixinho vive bem com a ração em flocos e em pó, porém, vale a pena investir em alimentos vivos pelo menos uma vez por semana."
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Macho ou Fêmea?"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/txtsexo"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Os machos são bem menores do que as fêmeas, mas são mais coloridos e possuem uma longa cauda em formato de véu."
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Expectativa de Vida:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/txtVida"
+            android:layout_width="350dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Vive em média apenas 2 anos, bem cuidado."
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+    </HorizontalScrollView>
+</ScrollView>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaCarpa"
+    android:background="@color/white">
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="1100dp"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            tools:ignore="MissingConstraints">
+
+            <View
+                android:id="@+id/btnVoltarHome"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/container_circulo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_seta2"
+                app:layout_constraintBottom_toBottomOf="@id/btnVoltarHome"
+                app:layout_constraintEnd_toEndOf="@id/btnVoltarHome"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnVoltarHome" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginBottom="36dp"
+                android:text="Peixe Carpa"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="216dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_allfishes"
+                app:layout_constraintStart_toEndOf="@id/btnVoltarHome"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Sobre:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout5" />
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/textView12"
+            android:layout_width="350dp"
+            android:layout_height="102dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="A carpa-comum é nativa da Europa e da Ásia e foi introduzida em todas as partes do mundo, exceto nos polos. É a terceira espécie (peixe) mais frequentemente introduzida em todo o mundo nos últimos anos que vivemos."
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="331dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/telacarpa" />
+
+        <TextView
+            android:id="@+id/txtCuidados"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Cuidados Básicos:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/txtTexto"
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="De comportamento pacífico e gregário, deve ser mantido em com inúmeros indivíduos. Outros peixes podem conviver nos lagos de jardim, desde que sejam resistentes às baixas temperaturas, quando em regiões de inverno rigoroso. Também devem ser peixes pacíficos, para não ocorrer agressividade entre os peixes que estiverem no tanque também."
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_aviso"
+            android:text="Atenção:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/textView18"
+            android:layout_width="205dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="-30dp"
+            android:text="Recomendado para viver em tanques e não aquários."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/txtComida"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Alimentação:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/txtComida2"
+            android:layout_width="350dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Alimenta-se de pequenos vermes, animais, plantas e matéria orgânica encontrados no fundo da areia ou lama, ou seja, come de tudo."
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Macho ou Fêmea?"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/txtsexo"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="O corpo do macho é mais esguio (cabeça e corpo). Já, as fêmeas, possuem cabeça e corpo mais largos principalmente na região do ventre."
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Expectativa de Vida:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/txtVida"
+            android:layout_width="350dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="A carpa pode viver até 20 anos em média."
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    </HorizontalScrollView>
+</ScrollView>

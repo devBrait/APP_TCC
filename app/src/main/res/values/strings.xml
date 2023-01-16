@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">TCC_mobile</string>
+
+    <string name="txt_user">Olá, Vinícius</string>
+    <string name="txt_pH">pH \n\n 7,2</string>
+    <string name="txt_TDS">TDS \n\n 200 ppm</string>
+    <string name="txt_Temp">Temperatura \n\n 23ºC</string>
+
+
+    <string-array name="Nomes_peixes">
+        <item>Betta</item>
+        <item>Kinguio</item>
+        <item>Lebiste</item>
+        <item>Carpa</item>
+        <item>Acara Disco</item>
+        <item>Tetra Neon</item>
+    </string-array>
+
+    <string-array name="pH_peixes">
+        <item>pH 6,8 à 7,4</item>
+        <item>pH 6,8 à 7,5</item>
+        <item>pH 7,0 à 7,8</item>
+        <item>pH 7,0 à 7,4</item>
+        <item>pH 6,8 à 7,2</item>
+        <item>pH 6,0 à 7,0</item>
+    </string-array>
+
+
+    <string name="text_justified">O pH é uma escala numérica utilizada para especificar a acidez, neutralidade ou alcalinidade de um meio aquoso. Quanto  menor o pH de uma substância, maior a concentração de íons H+ e menor a concentração de íons OH-.A escala do pH varia entre 0 e 14, em que a classificação entre 0 e 6.9 indica um pH ácido, 7 neutros e 7.1 a 14 alcalino ou básico </string>
+</resources>

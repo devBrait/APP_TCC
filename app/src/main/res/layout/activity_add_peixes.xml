@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddPeixes">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                tools:ignore="MissingConstraints">
+
+                <View
+                    android:id="@+id/btnVoltarHome"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/container_circulo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_seta2"
+                    app:layout_constraintBottom_toBottomOf="@id/btnVoltarHome"
+                    app:layout_constraintEnd_toEndOf="@id/btnVoltarHome"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/btnVoltarHome" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginEnd="70dp"
+                    android:layout_marginBottom="36dp"
+                    android:text="Peixes"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="216dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_allfishes"
+                    app:layout_constraintStart_toEndOf="@id/btnVoltarHome"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardBetta"
+                android:layout_width="340dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp">
+
+                    <ImageButton
+                        android:id="@+id/btnAdicionarBetta"
+                        android:layout_width="35dp"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="36dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/blue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.764"
+                        app:layout_constraintStart_toEndOf="@+id/myText2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_add" />
+
+                    <TextView
+                        android:id="@+id/myText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="36dp"
+                        android:text="pH 6,8 à 7,4"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/TelaBetta"
+                        app:layout_constraintTop_toTopOf="@+id/myText1" />
+
+
+
+                    <TextView
+                        android:id="@+id/myText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        android:text="Betta. "
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/TelaBetta"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/TelaBetta"
+                        android:layout_width="96dp"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/betta"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardNeon"
+                android:layout_width="340dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="30dp"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardBetta">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp">
+                    <ImageButton
+                        android:id="@+id/btnAdicionarNeon"
+                        android:layout_width="35dp"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="36dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@color/blue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.693"
+                        app:layout_constraintStart_toEndOf="@+id/myText2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_add" />
+                    <TextView
+                        android:id="@+id/txtNeon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Tetra Neon. "
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/imgNeon"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/txtNeon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="4dp"
+                        android:text="pH 6,0 à 7,0"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/imgNeon"
+                        app:layout_constraintTop_toBottomOf="@+id/txtNeon" />
+                    <View
+                        android:id="@+id/imgNeon"
+                        android:layout_width="96dp"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/neon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/Neonbanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="vazio"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteX="149dp"
+                        tools:layout_editor_absoluteY="82dp" />
+                    <TextView
+                        android:id="@+id/NeonpH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="vazio"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteX="149dp"
+                        tools:layout_editor_absoluteY="82dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardKing"
+                android:layout_width="340dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="-15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="30dp"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/CardNeon"
+                app:layout_constraintEnd_toEndOf="@+id/CardNeon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CardNeon">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp">
+
+                    <ImageButton
+                        android:id="@+id/btnAdicionarKinguio"
+                        android:layout_width="35dp"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="36dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@color/blue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.693"
+                        app:layout_constraintStart_toEndOf="@+id/myText2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_add" />
+
+                    <TextView
+                        android:id="@+id/txtKinguio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Kinguio. "
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/imgKinguio"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtKinguio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="4dp"
+                        android:text="pH 6,8 à 7,5"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/imgKinguio"
+                        app:layout_constraintTop_toBottomOf="@+id/txtKinguio" />
+
+                    <View
+                        android:id="@+id/imgKinguio"
+                        android:layout_width="96dp"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/kinguio"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/Kingbanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="vazio"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteX="149dp"
+                        tools:layout_editor_absoluteY="82dp" />
+
+                    <TextView
+                        android:id="@+id/KingpH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="vazio"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteX="149dp"
+                        tools:layout_editor_absoluteY="82dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardLebiste"
+                android:layout_width="340dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="-15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="30dp"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardKing"
+                app:layout_constraintEnd_toEndOf="@+id/CardKing"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CardKing">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp">
+                    <ImageButton
+                        android:id="@+id/btnAdicionarLebiste"
+                        android:layout_width="35dp"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="36dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@color/blue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.693"
+                        app:layout_constraintStart_toEndOf="@+id/myText2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_add" />
+                    <TextView
+                        android:id="@+id/txtLebiste"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Lebiste. "
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/imgLebiste"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/txtLebiste2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="4dp"
+                        android:text="pH 7,0 à 7,8"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/imgLebiste"
+                        app:layout_constraintTop_toBottomOf="@+id/txtLebiste" />
+                    <View
+                        android:id="@+id/imgLebiste"
+                        android:layout_width="96dp"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/lebistes"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/pHbanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="vazio"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteX="149dp"
+                        tools:layout_editor_absoluteY="82dp" />
+
+                    <TextView
+                        android:id="@+id/Lebistebanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="vazio"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteX="149dp"
+                        tools:layout_editor_absoluteY="82dp" />
+
+                    <TextView
+                        android:id="@+id/LebistepH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="vazio"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteX="149dp"
+                        tools:layout_editor_absoluteY="82dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCarpa"
+                android:layout_width="340dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="-15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="30dp"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardLebiste"
+                app:layout_constraintEnd_toEndOf="@+id/cardLebiste"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardLebiste">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp">
+                    <ImageButton
+                        android:id="@+id/btnAdicionarCarpa"
+                        android:layout_width="35dp"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="36dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@color/blue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.693"
+                        app:layout_constraintStart_toEndOf="@+id/myText2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_add" />
+                    <TextView
+                        android:id="@+id/txtCarpa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Carpa. "
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/imgCarpa"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/txtCarpa2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="4dp"
+                        android:text="pH 7,0 à 7,4"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/imgCarpa"
+                        app:layout_constraintTop_toBottomOf="@+id/txtCarpa" />
+                    <View
+                        android:id="@+id/imgCarpa"
+                        android:layout_width="96dp"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/carpa"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/Nomebanco"
+                        android:layout_width="26dp"
+                        android:layout_height="12dp"
+                        android:text="TextView"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteX="236dp"
+                        tools:layout_editor_absoluteY="90dp" />
+
+                    <TextView
+                        android:id="@+id/Carpabanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="vazio"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteX="149dp"
+                        tools:layout_editor_absoluteY="82dp" />
+                    <TextView
+                        android:id="@+id/CarpapH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="vazio"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteX="149dp"
+                        tools:layout_editor_absoluteY="82dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardAcara"
+                android:layout_width="340dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="-15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="30dp"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardCarpa"
+                app:layout_constraintEnd_toEndOf="@+id/cardCarpa"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardCarpa">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp">
+                    <ImageButton
+                        android:id="@+id/btnAdicionarAcara"
+                        android:layout_width="35dp"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="36dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@color/blue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.693"
+                        app:layout_constraintStart_toEndOf="@+id/myText2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_add" />
+                    <TextView
+                        android:id="@+id/txtAcara"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Acara Disco. "
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/imgAcara"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/txtAcara2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="4dp"
+                        android:text="pH 6,8 à 7,2"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/imgAcara"
+                        app:layout_constraintTop_toBottomOf="@+id/txtAcara" />
+                    <View
+                        android:id="@+id/imgAcara"
+                        android:layout_width="96dp"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/acara"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/SomaphB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:text="vazio"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteX="190dp"
+                        tools:layout_editor_absoluteY="80dp" />
+
+                    <TextView
+                        android:id="@+id/SomaBetta2"
+                        android:layout_width="20dp"
+                        android:layout_height="12dp"
+                        android:text="TextView"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteX="253dp"
+                        tools:layout_editor_absoluteY="82dp" />
+
+                    <TextView
+                        android:id="@+id/Acarabanco"
+                        android:layout_width="20dp"
+                        android:layout_height="12dp"
+                        android:text="TextView"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteX="253dp"
+                        tools:layout_editor_absoluteY="82dp" />
+
+                    <TextView
+                        android:id="@+id/AcarapH"
+                        android:layout_width="20dp"
+                        android:layout_height="12dp"
+                        android:text="TextView"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteX="253dp"
+                        tools:layout_editor_absoluteY="82dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</ScrollView>

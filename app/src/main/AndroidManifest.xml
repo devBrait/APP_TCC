@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.tcc_mobile">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_peixes6"
+        android:label="AllFishes"
+        android:roundIcon="@mipmap/ic_peixes6"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Splash"
+        tools:targetApi="31">
+        <activity
+            android:name=".TelaAcara"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TelaCarpa"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TelaLebiste"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TelaKing"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TelaNeon"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TelaBetta"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AltFoto"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddPeixes"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AlterarlFoto"
+            android:exported="false" />
+        <activity
+            android:name=".TelaSobre"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TelaTemp"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TelaTDS"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TelaPH"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TelaPeixes"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TelaDuvidas"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TelaUser"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TelaCadastro"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TelaLogin"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
