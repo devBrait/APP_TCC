@@ -7,3 +7,7 @@ Aplicativo mobile desenvolvido na plataforma android studio utilizando JAVA.
 - Algoritmo verifica a qualidade da água do aquário.
 - Recebe informações do sistema arduino.
 - Usuário pode adicionar seus peixes.
+_______________________________________________________________________________________________________________________________________________________________                                   
+<div align="center">
+ <img src= "https://user-images.githubusercontent.com/121905548/214107043-63ef6e7c-23ed-4948-8a63-a2e70561d267.jpeg" width="200px" height="400px" />
+</div>
